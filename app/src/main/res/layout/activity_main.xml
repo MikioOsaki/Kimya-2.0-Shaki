@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mikio.kimya_2_0_Shaki.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextGefahrenstoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/gefahrenstoff"/>
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextGefahrenstoff"
+        android:text="@string/finden"/>
+    <Button
+        android:id="@+id/buttonQRSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSearch"
+        android:text="@string/mit_qr_code_finden"/>
+
+    <Button
+        android:id="@+id/buttonForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonQRSearch"
+        android:text="@string/neue_anwendung" />
+
+
+    <ImageView
+        android:id="@+id/imageViewMSolutions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/msolutions"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/editTextEinheit"/>
+
+</RelativeLayout>
