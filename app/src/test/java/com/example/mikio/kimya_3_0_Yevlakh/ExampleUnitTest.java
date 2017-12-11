@@ -1,4 +1,4 @@
-package com.example.mikio.kimya_2_0_Shaki;
+package com.example.mikio.kimya_3_0_Yevlakh;
 
 import org.junit.Test;
 

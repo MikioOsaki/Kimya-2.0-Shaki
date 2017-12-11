@@ -1,4 +1,4 @@
-package com.example.mikio.kimya_2_0_Shaki;
+package com.example.mikio.kimya_3_0_Yevlakh;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -8,12 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
-import java.io.File;
-
-
-
 import java.io.File;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -62,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonSearch:
                 Toast.makeText(this, "Implementierung Folgt in Kürze.", Toast.LENGTH_SHORT).show();
                 File pdfFile = new File(Environment
-                                .getExternalStorageDirectory(), "Developing Multi-Agent Systems with JADE.pdf");
+                                .getExternalStorageDirectory(), "testpdf.pdf");
                 try {
                     if (pdfFile.exists()) {
                         Uri path = Uri.fromFile(pdfFile);
