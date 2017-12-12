@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Kimya 3.0 - Yevlakh</string>
     <string name="gefahrenstoff">Gefahrenstoff</string>
-    <string name="finden">Finden</string>
     <string name="mit_qr_code_finden">Mit QR Code finden</string>
     <string name="neue_anwendung">+ Anwendung hinzufügen</string>
     <string name="hier_kommt_die_eingabemaske_hin">Hier kommt die Eingabemaske hin.</string>
@@ -10,5 +9,6 @@
     <string name="einheit">Einheit*</string>
     <string name="anlage">Anlage*</string>
     <string name="speichern">Speichern</string>
+    <string name="manuelle_suche">Manuelle Suche</string>
 
 </resources>

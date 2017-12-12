@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onResume() {
         super.onResume();
-        Button buttonSearch = (Button) findViewById(R.id.buttonSearch);
+        Button buttonManuelleSuche = (Button) findViewById(R.id.buttonManuelleSuche);
         Button buttonQRSearch = (Button) findViewById(R.id.buttonQRSearch);
         Button buttonForm = (Button) findViewById(R.id.buttonForm);
 
-        buttonSearch.setOnClickListener(this);
+        buttonManuelleSuche.setOnClickListener(this);
         buttonQRSearch.setOnClickListener(this);
         buttonForm.setOnClickListener(this);
     }
@@ -54,36 +54,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.buttonSearch:
-                Toast.makeText(this, "Implementierung Folgt in Kürze.", Toast.LENGTH_SHORT).show();
-                File pdfFile = new File(Environment
-                                .getExternalStorageDirectory(), "testpdf.pdf");
-                try {
-                    if (pdfFile.exists()) {
-                        Uri path = Uri.fromFile(pdfFile);
-                        Intent objIntent = new Intent(Intent.ACTION_VIEW);
-                        objIntent.setDataAndType(path, "application/pdf");
-                        objIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(objIntent);
-                    } else {
-                        Toast.makeText(MainActivity.this, "File NotFound",
-
-                                Toast.LENGTH_SHORT).show();
-                    }
-                } catch (ActivityNotFoundException e) {
-                    Toast.makeText(MainActivity.this,
-                            "No Viewer Application Found", Toast.LENGTH_SHORT)
-                            .show();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+            case R.id.buttonManuelleSuche:
+                Intent iM = new Intent(this, ManuelleSucheActivity.class);
+                startActivity(iM);
+                finish();
                 break;
             case R.id.buttonQRSearch:
                 Toast.makeText(this, "Implementierung Folgt in Kürze.", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.buttonForm:
-                Intent i = new Intent(this, FormActivity.class);
-                startActivity(i);
+                Intent iF = new Intent(this, FormActivity.class);
+                startActivity(iF);
                 finish();
                 break;
 
